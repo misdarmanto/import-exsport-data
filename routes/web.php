@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductController;
+use App\Http\Controllers\SubsidiBbmController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +15,6 @@ use App\Http\Controllers\ProductController;
 */
 
 
-Route::get('/', [ProductController::class, 'index'])->name('products.index');
-Route::get('/export', [ProductController::class, 'export'])->name('products.export');
-Route::post('/import', [ProductController::class, 'import'])->name('products.import');
+Route::get('/', [SubsidiBbmController::class, 'index'])->name('subsidiBbm.index');
+Route::get('/export', [SubsidiBbmController::class, 'export'])->name('subsidiBbm.export');
+Route::post('/import', [SubsidiBbmController::class, 'import'])->name('subsidiBbm.import');
